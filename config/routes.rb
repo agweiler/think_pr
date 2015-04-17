@@ -1,7 +1,7 @@
   Rails.application.routes.draw do
 
   devise_for :admins
-  # devise_for :users
+
   resources :posts do
     resources :comments
   end
@@ -13,6 +13,7 @@
   get '/contact', to: 'pages#contact'
   get '/clients', to: 'pages#portfolio'
   get '/expertise', to: 'pages#services'
+  get '/posts', to: 'posts#index'
 
 
 
