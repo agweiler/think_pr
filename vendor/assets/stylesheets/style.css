@@ -530,6 +530,22 @@ text-transform: uppercase;
     border: 2px solid #0FAF97;
 }
 
+#content-region-4{
+    background: url('../../assets/img/img-6.jpg') no-repeat top center fixed;
+    padding: 80px 0;
+    background-attachment: fixed;
+    width:100%;
+    overflow: hidden;
+}
+
+#content-region-5{
+    background: url('../../assets/img/img-5.jpg') no-repeat top center fixed;
+    padding: 80px 0;
+    background-attachment: fixed;
+    width:100%;
+    overflow: hidden;
+}
+
 /*==========================portfolio ==========================*/
 .portfolio-sec{
     border: 1px solid #eeeeee;
@@ -951,7 +967,7 @@ h4.portfolio-post-title{
 }
 /****************breadcrumbs*********************************************/
 .page-tree-bg{
-    background-image: url(../img/bread-bg.png);
+    background-image: url('../../assets/img/bread-bg');
     background-color: #0FAF97;
     padding: 100px 0;
     width: 100%;
@@ -961,6 +977,7 @@ h3.page-tree-text{
    text-transform: uppercase;
     color:#fff;
     margin:0px;
+    padding-top: 35px;
 }
 /***********************bootstrap pagination override***************************/
 .pagination li a{
