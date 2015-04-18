@@ -15,6 +15,8 @@
   get '/expertise', to: 'pages#services'
   get '/posts', to: 'posts#index'
 
+  post '/posts/new', to: 'posts#show'
+
 
 
 end

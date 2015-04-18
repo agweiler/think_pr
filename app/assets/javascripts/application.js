@@ -24,8 +24,7 @@
 //= require app
 
 //= require contact_me
-//= require jqBootstrapValidation
-//= require npm
+//= require_npm
 //= require jquery.hoverdir
 //= require jquery.masonry.min
 //= require modernizr.custom.97074
