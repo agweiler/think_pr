@@ -1,7 +1,7 @@
-<div class="comment clearfix">
-	<div class="comment_content">
-		<p class="comment_name"><strong><%= comment.name %></strong></p>
-		<p class="comment_body"><%= comment.body %></p>
+<div class="comment-box clearfix">
+<img src="assets/img/blog/blog-1.jpg" class="img-responsive" alt="">
+	<span>by <%= comment.name %></span>
+		<p><%= comment.body %></p>
 		<p class="comment_time"><%= time_ago_in_words(comment.created_at) %> Ago</p>
 	</div>
 
@@ -11,4 +11,4 @@
 								  class: "button",
 								 	data: { confirm: 'Are you sure?' } %></p>
  	<% end %>
-</div>
+ </div>
