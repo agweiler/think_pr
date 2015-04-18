@@ -13,4 +13,13 @@ class CommentsController < ApplicationController
 
 		redirect_to post_path(@post)
 	end
+
+  def show
+		@post = Post.find(params[:post_id])
+		@comment = @post.comments.find(params[:id])
+		@comment.destroy
+
+		redirect_to post_path(@post)
+	end
+
 end

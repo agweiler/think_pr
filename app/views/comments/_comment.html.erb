@@ -2,7 +2,7 @@
 <img src="assets/img/blog/blog-1.jpg" class="img-responsive" alt="">
 	<span>by <%= comment.name %></span>
 		<p><%= comment.body %></p>
-		<p class="comment_time"><%= time_ago_in_words(comment.created_at) %> Ago</p>
+		<p><%= time_ago_in_words(comment.created_at) %> Ago</p>
 	</div>
 
 	<% if admin_signed_in? %>
@@ -11,4 +11,4 @@
 								  class: "button",
 								 	data: { confirm: 'Are you sure?' } %></p>
  	<% end %>
- </div>
+ 	</div>
