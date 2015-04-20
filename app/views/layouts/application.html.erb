@@ -73,82 +73,95 @@
 
 <%= yield %>
 <!--  <div class="space-70"></div>
- --> <div id="footer">
-            <div class="container">
+ --> <footer id="footer-option">
+              <div class="container">
                 <div class="row">
-                    <div class="col-md-4 margin-btm-20">
-                        <div class="footer-col">
-                            <h3>Bizwrap</h3>
-                            <p>
-                                aliqua.adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. aliqua.adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
-                            </p>
-                        </div>
-                        <div class="space-20"></div>
-                        <div class="footer-col">
-                            <h3>contact info</h3>
-                            <p><i class="ion-home"></i> pearl tower,3rd floor,jaipur,302012</p>
-                            <p><i class="ion-iphone"></i> +91 9887568614</p>
-                            <p><i class="ion-email"></i> mail@domain.com</p>
-                        </div>
-                        <div class="space-20"></div>
-                        <div class="footer-col">
-                            <h3>Follow us</h3>
-                            <ul class=" list-inline social-btn">
-                                <li><a href="http://www.facebook.com/Thinkprdk"><i class="ion-social-facebook" data-toggle="tooltip" data-placement="top" title="" data-original-title="Like On Facebook"></i></a></li>
-                                <li><a href="http://www.twitter.com/Thinkprdk"><i class="ion-social-twitter" data-toggle="tooltip" data-placement="top" title="" data-original-title="Follow On twitter"></i></a></li>
-                                <li><a href="http://www.linkedin.com/company/think-pr-denmark-"><i class="ion-social-linkedin" data-toggle="tooltip" data-placement="top" title="" data-original-title="Follow On linkedin"></i></a></li>
-                               <!--  <li><a href="#"><i class="ion-social-pinterest" data-toggle="tooltip" data-placement="top" title="" data-original-title="pinterest"></i></a></li>
-                                <li><a href="#"><i class="ion-social-skype" data-toggle="tooltip" data-placement="top" title="" data-original-title="skype"></i></a></li> -->
-                            </ul>
-                        </div><!--footer social col-->
-                    </div><!--col-4 end-->
                     <div class="col-md-3 margin-btm-20">
                         <div class="footer-col">
-                            <h3>Latest post</h3>
-                            <ul class="post-list list-unstyled">
-                                <li><a href="#" class="hover-color">Blog post with image</a></li>
-                                <li><a href="#" class="hover-color">lorem ipsum dollor sit amet</a></li>
-                                <li><a href="#" class="hover-color">Blog post with audio</a></li>
-                                <li><a href="#" class="hover-color">lorem ipsum dollor sit amet</a></li>
-                                <li><a href="#" class="hover-color">Blog post with quote</a></li>
-                            </ul>
-                        </div>
-                    </div><!--latest post col end-->
-                    <div class="col-md-5">
-                        <div class="footer-col">
-                            <h3>Get in touch</h3>
+                            <h3>Newsletter</h3>
+                            <p class="margin-btm-20">
+                                Keep up on our always evolving Future updates. Enter your e-mail and subscribe to our newsletter.
+                            </p>
                             <form>
                                 <div class="row">
-                                    <div class="col-md-6">
-                                        <input type="text" class="form-control" placeholder="Name...">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input type="email" class="form-control" placeholder="Email...">
-                                    </div>
-                                    <div class="col-md-12">
-                                        <input type="text" class="form-control" placeholder="Subject...">
-                                    </div>
-                                    <div class="col-md-12">
-                                        <textarea class="form-control" placeholder="Massage..." rows="7"></textarea>
-                                    </div>
-                                    <div class="col-md-12 text-right">
-                                        <button type="submit" class="btn btn-lg btn-white">Send messege</button>
+                                    <div class="col-sm-12">
+                                        <div class="input-group">
+                                            <label class="sr-only" for="subscribe-email">Email address</label>
+                                            <input type="email" class="form-control" id="subscribe-email" placeholder="Enter your email">
+                                            <span class="input-group-btn">
+                                                <button type="submit" class="btn theme-btn-color">Go!</button>
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                             </form>
                         </div>
-                    </div><!--get in touch col end-->
-                </div><!--footer main row end-->  
-                <div class="space-70"></div>
-                <div class="row">
-                    <div class="col-md-12 text-center footer-bottom">
-                        <a href="/"> <img src="assets/img/logo-white.png" alt=""></a>
-                        <div class="space-20"></div>
-                        <span>&copy;2015. Proudly developed by <a href="http://www.blackboxdev.co"><span style="color:#777">Blackbox Dev</span></a></span>
+                    </div><!--footer col end-->
+                    <div class="col-md-3 margin-btm-20">
+                        <div class="footer-col margin-btm-20">
+                            <h3>Latest tweet</h3>
+                            <a href="#" class="tweet-ac hover-color">@rakesh_wd</a>
+                            <div class="tweet-desc">
+                                <i class="ion-social-twitter"></i>Bizwrap is right choice for your business project.its comes with new features and update in every month.
+                            </div>
+                            <a href="#" class="hover-color tweet-day">50 min ago</a>
+                            <hr>
+                        </div>
+                        <div class="footer-col">
+                            <a href="#" class="tweet-ac hover-color">@rakesh_wd</a>
+                            <div class="tweet-desc">
+                                <i class="ion-social-twitter"></i>Bizwrap is right choice for your business project.its comes with new features and update in every month.
+                            </div>
+                            <a href="#" class="hover-color tweet-day">1 day ago</a>
+                        </div>
+                    </div><!--footer col end-->
+                    <div class="col-md-3 margin-btm-20">
+                        <div class="footer-col margin-btm-20">
+                            <h3>Follow us</h3>
+                            <ul class=" list-inline social-btn">
+                                <li><a href="http://www.facebook.com/Thinkprdk"><i class="ion-social-facebook" data-toggle="tooltip" data-placement="top" title="" data-original-title="Like On Facebook"></i></a></li>
+                                <li><a href="http://www.twitter.com/thinkprdk"><i class="ion-social-twitter" data-toggle="tooltip" data-placement="top" title="" data-original-title="Follow On twitter"></i></a></li>
+                                <li><a href="http://www.linkedin.com/company/think-pr-denmark-"><i class="ion-social-linkedin" data-toggle="tooltip" data-placement="top" title="" data-original-title="Connect On LinkedIn"></i></a></li>
+                            </ul>
+                        </div> 
+                    </div><!--footer col end-->
+                    <div class="col-md-3 margin-btm-20">
+                        <div class="footer-col">
+                            <h3>contact info</h3>
+                            <p><i class="ion-home"></i> Kronprinsensgade 5, 2. sal, 
+1114 København K</p>
+                            <p><i class="ion-iphone"></i> [+45] 33 14 00 00</p>
+                            <p><i class="ion-email"></i> info@thinkpr.dk</p>
+                        </div>
+
+                    </div><!--footer col end-->
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-1 footer-logo">
+                            <a href="index.html">
+                                <img src="assets/img/logo-white.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-5">
+                            <p>&copy; copyright 2015. developed by <a href="http://www.blackboxdev.co" style="color:#777">blackbox dev.</p>
+                        </div>
+                        <div class="col-md-6 ">
+                            <ul class="list-inline footer-nav">
+                                <li><a href="/about">About</a></li>
+                                <li><a href="/expertise">Expertise</a></li>
+                                <li><a href="/clients">Clients</a></li>
+                                <li><a href="/">Showroom</a></li>
+                                <li><a href="/posts">Blog</a></li>
+                                <li><a href="/contact">Contact</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div><!--footer copyright row end-->
-            </div><!--container-->
-        </div><!--footer main end-->
+                </div>
+            </div>
+        </footer><!--footer main end-->
 
 
 </body>
