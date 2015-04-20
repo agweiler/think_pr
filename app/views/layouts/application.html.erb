@@ -85,13 +85,11 @@
 
 
 <!--Mailchimp integration-->
-
                            <%= form_tag('emailapi/subscribe', class: "input-group", method: "post", id: "subscribe", remote: "true", 'data-type' => :json) do -%>
                             <div class="form-group">
                                <%= email_field(:email, :address, {class: "form-control", id: "subscribe-email", placeholder: "Enter your email"})%>
                             </div>
-                                                                        <span class="input-group-btn">
-
+                            <span class="input-group-btn">
                              <%= button_tag(type: 'submit', class: "btn theme-btn-color") do %> Go!
                              <% end %>
                              </span>

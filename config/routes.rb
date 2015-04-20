@@ -19,6 +19,8 @@
 
   # Mailchimp
   post 'emailapi/subscribe' => 'emailapi#subscribe'
+  # get 'emailapi/subscribe' => 'emailapi#subscribe' 
+
 
 
 
