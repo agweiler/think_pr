@@ -1,19 +1,151 @@
-<div id="post_content">
-	<h1 class="title"><%= @post.title %></h1>
-	<p class="date">
-		Submitted <%= time_ago_in_words(@post.created_at) %> Ago
-		<% if admin_signed_in? %>
-		| <%= link_to 'Edit', edit_post_path(@post) %> |
-		  <%= link_to 'Delete', post_path(@post), method: :delete, data: { confirm: 'Are you sure?' } %>
-	  <% end %>
-	</p>
-	<p class="body"><%= @post.body %></p>
 
-	<div id="comments">
-		<h2><%= @post.comments.count %> Comments</h2>
-		<%= render @post.comments %>
 
-		<h3>Add a comment:</h3>
-		<%= render "comments/form" %>
-	</div>
-</div>
+        <section id="content-region-3" class="padding-40 page-tree-bg">
+            <div class="container">
+                <h3 class="page-tree-text">
+                    blog single post
+                </h3>
+            </div>
+        </section><!--page-tree end here-->
+        <div class="space-70"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="blog-post-section">
+                        <div class="blog-post-img">
+                        <%= image_tag @post.image.url(:medium), class: "img-responsive" %>
+                        </div>
+                        <div class="blog-post-header">
+                            <h3><a href="" class="hover-color"><%= @post.title %></a></h3>
+                        </div>
+                        <div class="blog-post-info">
+                            <span><a href="#" class="hover-color"><%=(@post.created_at) %> | <%= @post.comments.count %> Comments</span>
+                        </div>
+                        <div class="blog-post-detail">
+                           <p><%= @post.body %></p>
+                        </div>
+                       
+                    </div><!--blog post section end-->
+               
+                    <div class="row">
+                        <div class="col-md-12">
+                         <div class="post-comment-wrapper clearfix">
+                            <h3><%= @post.comments.count %> Comments</h3>
+                          <%= render @post.comments %><!--comment box-->
+                        </div><!--comment wrapper-->
+                        <div class="space-40"></div>
+                        <div class="comment-form-wrapper">
+                            <h3>leave a comment</h3>
+                            
+                              <%= render "comments/form" %>
+                            
+                        </div><!--comment form wrapper-->
+                    </div>
+
+                    </div><!--row-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="pagination">
+                                <li><a href="#">&laquo;</a></li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">&raquo;</a></li>
+                            </ul>
+                        </div>
+                    </div><!--pagination-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div><!--blog content--> 
+                 <div class="col-md-4">
+                    <div class="sidebar-box">
+                        <div class="widget-search">
+                            <form class="search-form">
+                                <input type="text" class="form-control" placeholder="search here...">
+                                <i class="ion-search" data-toggle="tooltip" data-placement="top" title="" data-original-title="hit enter to search"></i>
+                            </form>
+                        </div>
+                    </div><!--sidebar-box--><hr>
+                    <div class="sidebar-box">
+                        <h4>categories</h4>
+                        <ul class="cat-list">
+                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="10" class="hover-color">Sports</a></li>
+                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="6" class="hover-color">Management</a></li>
+                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="8" class="hover-color">Music</a></li>
+                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="14" class="hover-color">Product</a></li>
+                        </ul>
+                    </div><hr>
+                    <div class="sidebar-box">
+                        <h4>Text widget</h4>
+                        <p>
+                            Doloreiur quia commolu ptatemp dolupta oreprerum tibusam eumenis et consent accullignis dentibea autem inisita.
+                        </p>
+                    </div><hr>
+                    <div class="sidebar-box">
+                        <h4>recent post</h4>
+                        <div class="recent">
+                            <span>
+                                <img src="assets/img/blog/blog-1.jpg" class="img-responsive" alt="">
+                            </span>
+                            <p><a href="#" class="hover-color">There are many  embarrassing hidden in the middle of text.</a></p>
+                            <span class="recent-date">On 27 may in office.</span>
+                        </div>
+                        <div class="recent">
+                            <span>
+                                <img src="assets/img/blog/blog-2.jpg" class="img-responsive" alt="">
+                            </span>
+                            <p><a href="#" class="hover-color">There are many  embarrassing hidden in the middle of text.</a></p>
+                            <span class="recent-date">On 27 may in office.</span>
+                        </div>
+                        <div class="recent">
+                            <span>
+                                <img src="assets/img/blog/blog-3.jpg" class="img-responsive" alt="">
+                            </span>
+                            <p><a href="#" class="hover-color">There are many  embarrassing hidden in the middle of text.</a></p>
+                            <span class="recent-date">On 27 may in office.</span>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <hr>
+                    <div class="sidebar-box">
+                        <h4>Elsewhere</h4>
+                        <ul class=" list-inline social-btn">
+                            <li><a href="http://www.facebook.com/Thinkprdk"><i class="ion-social-facebook" data-toggle="tooltip" data-placement="top" title="" data-original-title="Like On Facebook"></i></a></li>
+                            <li><a href="http://www.twitter.com/thinkprdk"><i class="ion-social-twitter" data-toggle="tooltip" data-placement="top" title="" data-original-title="Follow On twitter"></i></a></li>
+                            <li><a href="http://www.linkedin.com/company/think-pr-denmark-"><i class="ion-social-linkedin" data-toggle="tooltip" data-placement="top" title="" data-original-title="Connect On LinkedIn"></i></a></li>
+
+                            </ul>
+                    </div><hr>
+                </div><!--sideabr blog end -->
+            </div>
+
+        </div><!--blog post page content end here-->
+        <div class="space-70"></div>
+             
+         <!--scripts-->
+        <script src="assets/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="assets/js/jquery.easing.1.3.min.js" type="text/javascript"></script>
+        <script src="assets/js/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+        <script src="assets/js/jquery.sticky.js" type="text/javascript"></script>
+        <script src="assets/js/jquery.flexslider-min.js" type="text/javascript"></script>
+        <script src="assets/js/jquery.mixitup.min.js" type="text/javascript"></script>
+        <script src="assets/js/wow.min.js" type="text/javascript"></script>
+        <script src="assets/js/app.js" type="text/javascript"></script>
+  

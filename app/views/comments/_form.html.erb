@@ -1,9 +1,19 @@
 <%= form_for([@post, @post.comments.build]) do |f| %>
-	<%= f.label :name %><br>
-	<%= f.text_field :name %><br>
-	<br>
-	<%= f.label :body %><br>
-	<%= f.text_area :body %><br>
-	<br>
-	<%= f.submit %>
+	<div class="row">
+    <div class="col-md-6">
+      </br>
+	    <%= f.text_field :name, class: "form-control", autofocus: true, placeholder: 'Name' %><br>
+    </div>
+      <div class="col-md-6">
+        </br>
+        <input type="email" class="form-control" placeholder="Email"></br>
+      </div>
+	      <div class="col-md-12">
+	        <br>
+	        <%= f.text_area :body, class: "form-control", autofocus: true, placeholder: 'Message' %><br>
+        </div>
+	       <div class="col-md-12 text-right">
+	        <%= f.submit 'Comment', class: "btn btn-lg theme-btn-color" %>
+         </div>
+  </div>
 <% end %>
