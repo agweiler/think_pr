@@ -17,6 +17,10 @@
 
   post '/posts/new', to: 'posts#show'
 
+  # Mailchimp
+  post 'emailapi/subscribe' => 'emailapi#subscribe'
+
+
 
 
 end
