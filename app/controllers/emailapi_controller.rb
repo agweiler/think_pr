@@ -17,9 +17,9 @@ class EmailapiController < ApplicationController
           :email => {:email => email}
         })
 
-        redirect_to( root_path, :flash => :success)
+        redirect_to(root_path, :flash => :success)
       else
-        redirect_to( root_path, :flash => :error)
+        redirect_to(root_path, :flash => :error)
 
 
 

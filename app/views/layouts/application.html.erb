@@ -11,6 +11,31 @@
 <body>
 <header class="header-main">
 
+
+
+
+      <% if current_admin %>
+      <div class="top-bar">
+
+                <div class="container">
+                    <ul class="info list-inline pull-left hidden-xs">
+                        <li><a href="#" class="hover-color"><i class="ion-ios-email-outline"></i> <%= current_admin.email %></a></li>
+                        <li><i class="ion-iphone"></i> +91 (123) 456 78 90</li>
+                    </ul>  
+                    <div class="pull-right">
+                        <ul class="info list-inline hidden-xs">
+                            <li><!-- <a href="#" class="hover-color">Create an account?</a> --></li>
+                            <li></i><%= link_to "Log out", destroy_admin_session_path, method: :delete %></li>
+                        </ul>
+                    </div>
+                </div><!--container end-->
+            </div><!--t
+              
+            <% end %> 
+      </div>
+
+
+
             <div class="navbar navbar-default navbar-fixed-top" role="navigation">
                 <div class="container">
                     <div class="navbar-header">
@@ -64,12 +89,47 @@
         </header><!--header main end-->
 
 
-<% if notice %>
-  <p class="alert alert-success"><%= notice %></p>
-<% end %>
-<% if alert %>
-  <p class="alert alert-danger"><%= alert %></p>
-<% end %>
+<!-- Mailchimp notifications -->
+
+<!--         <div id="flash_messages"><%= flash_messages %></div>
+ --><!-- End -->
+
+<!-- Notification and alerts (devise) -->
+
+      <% if notice || alert || flash_messages %>
+         <div class="container-fluid" style="padding-left: 0px; padding-right: 0px; background-color:#222"> 
+      <div class="col-md-12" style="height:58px">
+        <div class="alert alert-success alert-dismissable">
+          <span class="glyphicon glyphicon-certificate"></span>
+          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+              ×</button>
+              <%= notice %>
+              <% end %>
+              </div>
+        
+        <% if alert %>
+
+        <div class="alert alert-danger alert-dismissable">
+            <span class="glyphicon glyphicon-certificate"></span>
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                ×</button>
+                <%= alert %>
+                <% end %>
+                </div>
+
+        <% if flash_messages %>
+
+        <div class="alert alert-success alert-dismissable" id="">
+            <span class="glyphicon glyphicon-certificate"></span>
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                ×</button>
+                <%= flash_messages %>
+                <% end %>
+                </div>
+
+      </div>  
+
+<!-- End notification and alerts -->
 
 <%= yield %>
 <!--  <div class="space-70"></div>

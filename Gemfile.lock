@@ -40,6 +40,7 @@ GEM
     bcrypt (3.1.10)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bootstrap_flash_messages (1.0.0)
     builder (3.2.2)
     byebug (4.0.5)
       columnize (= 0.9.0)
@@ -63,6 +64,8 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
+    devise-async (0.9.0)
+      devise (~> 3.2)
     erubis (2.7.0)
     execjs (2.5.2)
     gibbon (1.1.5)
@@ -173,9 +176,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap_flash_messages (~> 1.0.0)
   byebug
   coffee-rails (~> 4.1.0)
   devise
+  devise-async
   gibbon
   jbuilder (~> 2.0)
   jquery-rails
